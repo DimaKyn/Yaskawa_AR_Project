@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    public float speed;
     void Start()
     {
-        Debug.Log("Hello World");
+
     }
 
     void Update()
