@@ -458,6 +458,7 @@ GameObject:
   - component: {fileID: 1574440974661037930}
   - component: {fileID: 1654283342202911277}
   - component: {fileID: 5740474702339449}
+  - component: {fileID: 8284635000027573158}
   m_Layer: 0
   m_Name: gp8_3_primitive_2
   m_TagString: Untagged
@@ -530,6 +531,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5128182002015554150}
   m_Mesh: {fileID: 4300000, guid: 2f4e2ba2bcb82d74d81b61cff06336e3, type: 2}
+--- !u!114 &8284635000027573158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128182002015554150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneShape: 1
+  drawBones: 1
+  drawTripods: 0
+  boneSize: 1
+  tripodSize: 1
+  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
+  m_Transforms:
+  - {fileID: 1574440974661037930}
 --- !u!1 &5230882296354389723
 GameObject:
   m_ObjectHideFlags: 0
