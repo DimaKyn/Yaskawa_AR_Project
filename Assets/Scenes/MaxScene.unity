@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 403410403}
   - component: {fileID: 403410402}
   - component: {fileID: 403410401}
-  - component: {fileID: 403410400}
+  - component: {fileID: 403410404}
   m_Layer: 0
   m_Name: ModelTarget
   m_TagString: Untagged
@@ -262,24 +262,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &403410400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403410399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1621554113, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 403410402}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: gp8
-  mDatasetName: Vuforia/gp8.xml
-  mCastedBehaviour: {fileID: 403410402}
-  mModelTargetPreview: {fileID: 0}
 --- !u!114 &403410401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +348,7 @@ MonoBehaviour:
   mTrackingOptimization: 1
   mTrackingOptimizationNeedsUpgrade: 0
   mHasRealisticTextures: 0
-  mPreview: {fileID: 403410400}
+  mPreview: {fileID: 403410404}
   mAutoValidationDataSetName: 
 --- !u!4 &403410403
 Transform:
@@ -384,6 +366,24 @@ Transform:
   - {fileID: 1724243238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403410404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403410399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1621554113, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 403410402}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: gp8
+  mDatasetName: Vuforia/gp8.xml
+  mCastedBehaviour: {fileID: 403410402}
+  mModelTargetPreview: {fileID: 0}
 --- !u!1001 &1724243237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9416fb178aaca094fa988136cf122602, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -1.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9416fb178aaca094fa988136cf122602, type: 3}
       propertyPath: m_LocalPosition.y
