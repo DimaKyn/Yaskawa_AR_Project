@@ -23,6 +23,5 @@ public class Axis5_head_spin : MonoBehaviour
         Vector3 rotationDirection = new Vector3(1, 0, 0);
 
         transform.Rotate(rotationDirection * rotateSpeed * Time.deltaTime, Space.Self);
-
     }
 }
