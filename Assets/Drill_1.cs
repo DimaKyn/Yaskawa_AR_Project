@@ -21,6 +21,13 @@ public class Drill_1 : MonoBehaviour
         transform.LeanRotate(new Vector3(0, -14, -87), 2);
     }
 
+    public void Drill_rotate()
+    {
+        Vector3 rotationDirection = new Vector3(1500, 0, 0);
+
+        transform.Rotate(new Vector3(0, 1500, 0) * Time.deltaTime);
+    }
+
 
 }
         
