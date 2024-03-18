@@ -8,7 +8,9 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 public class xpControler : MonoBehaviour
-{
+{   
+    public AudioSource soundEffectsSrc;
+    public AudioClip sfxLevelUp;
     [SerializeField] private TextMeshProUGUI LevelText;
     [SerializeField] private TextMeshProUGUI ExperienceText;
     [SerializeField] private int Level;
@@ -16,7 +18,7 @@ public class xpControler : MonoBehaviour
     [SerializeField] private float TargetXp;
     [SerializeField] private Image xpProgressBar;
 
-    [SerializeField] private float DelayBetweenXPGains = 0.5f; // Adjust delay as needed
+    [SerializeField] private float DelayBetweenXPGains = 0.1f; // Adjust delay as needed
     [SerializeField] private string scene;
 
     void Start(){
@@ -46,6 +48,9 @@ public class xpControler : MonoBehaviour
     }
 
     public void ExperienceController(float CurrentXp){
+        soundEffectsSrc.clip = sfxLevelUp;
+        soundEffectsSrc.Play();
+        waitForIt(0.5f);
         if(CurrentXp >= TargetXp){
             CurrentXp = 0;
             Level++;
@@ -53,12 +58,11 @@ public class xpControler : MonoBehaviour
             xpProgressBar.fillAmount = 0;
             ExperienceText.text = CurrentXp + " / " + TargetXp;
         }
-        waitForIt();
+        waitForIt(0.7f);
         MoveToScene();
     }
 
-    IEnumerator waitForIt(){
-        float delay = 0.7f;
+    IEnumerator waitForIt(float delay){
         yield return new WaitForSeconds(delay);
     }
 
