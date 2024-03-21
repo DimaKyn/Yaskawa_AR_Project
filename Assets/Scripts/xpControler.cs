@@ -10,7 +10,7 @@ using TMPro;
 public class xpControler : MonoBehaviour
 {   
     public AudioSource soundEffectsSrc;
-    public AudioClip sfxLevelUp;
+    public AudioClip sfx;
     [SerializeField] private TextMeshProUGUI LevelText;
     [SerializeField] private TextMeshProUGUI ExperienceText;
     [SerializeField] private int Level;
@@ -48,7 +48,7 @@ public class xpControler : MonoBehaviour
     }
 
     public void ExperienceController(float CurrentXp){
-        soundEffectsSrc.clip = sfxLevelUp;
+        soundEffectsSrc.clip = sfx;
         soundEffectsSrc.Play();
         waitForIt(0.5f);
         if(CurrentXp >= TargetXp){
