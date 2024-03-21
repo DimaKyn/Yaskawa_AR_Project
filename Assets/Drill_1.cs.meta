@@ -3,7 +3,10 @@ guid: 4585bcfbcefe8de429564f36c8756175
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - metalPlate_two_holes: {fileID: 919132149155446097, guid: a8c0d3b9e48cd0d4f9f1a77a7c3d9b12, type: 3}
+  - metalPlate_one_hole: {fileID: 919132149155446097, guid: d2bbcada31387f243a8782e7aec52878, type: 3}
+  - metalPlate_no_holes: {fileID: 919132149155446097, guid: cd6ba9f37910f7942bb66016590e1b6e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
