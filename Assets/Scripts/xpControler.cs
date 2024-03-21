@@ -18,8 +18,10 @@ public class xpControler : MonoBehaviour
     [SerializeField] private float TargetXp;
     [SerializeField] private Image xpProgressBar;
 
-    [SerializeField] private float DelayBetweenXPGains = 0.1f; // Adjust delay as needed
+    [SerializeField] private float DelayBetweenXPGains = 0.05f; // Adjust delay as needed
     [SerializeField] private string scene;
+
+    public GameObject xpGainText;
 
     void Start(){
         xpProgressBar.fillAmount = (CurrentXp / TargetXp);
@@ -34,10 +36,10 @@ public class xpControler : MonoBehaviour
     {
         while (CurrentXp < 100)
         {
-            CurrentXp += 10;
+            CurrentXp += 25;
             ExperienceText.text = CurrentXp + " / " + TargetXp;
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
-
+            
             yield return new WaitForSeconds(DelayBetweenXPGains);
 
             if (CurrentXp == 100){
@@ -68,5 +70,14 @@ public class xpControler : MonoBehaviour
 
     public void MoveToScene(){
         SceneManager.LoadScene(scene);
+    }
+
+    
+    public void OpenGainText(){
+        if(xpGainText != null){
+            bool isActive = xpGainText.activeSelf;
+
+            xpGainText.SetActive(!isActive);
+        }
     }
 }
