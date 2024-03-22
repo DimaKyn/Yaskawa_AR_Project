@@ -42,7 +42,7 @@ public class weldFlicker : MonoBehaviour
 
         if (timer <= 0) {
             lightOB.enabled = !lightOB.enabled;
-            lightSound.Play();
+            //lightSound.Play();
             timer = Random.Range(minTime, maxTime);
         }
     }
