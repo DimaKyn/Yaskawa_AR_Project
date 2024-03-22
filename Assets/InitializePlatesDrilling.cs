@@ -24,14 +24,7 @@ public class InitializePlatesDrilling : MonoBehaviour
     }
 
     public void Update() {
-        drill_1_axis1 = yaskawa.GetComponent<Drill_1_Axis1>();
 
-        if (drill_1_axis1.drilled == 1) {
-            Destroy(metalPlate_no_holes);
-        }
-        else if (drill_1_axis1.drilled == 2) {
-            Destroy(metalPlate_one_hole);
-        }
     }
 
 }
