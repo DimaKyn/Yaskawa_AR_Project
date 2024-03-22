@@ -5,7 +5,7 @@ using UnityEngine;
 public class Axis5_head_spin : MonoBehaviour
 {
     [SerializeField]
-    public float rotateSpeed = 5;
+    public float rotateSpeed = 1800;
 
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class Axis5_head_spin : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 rotationDirection = new Vector3(1, 0, 0);
+        Vector3 rotationDirection = new Vector3(0, 0, 1);
 
         transform.Rotate(rotationDirection * rotateSpeed * Time.deltaTime, Space.Self);
     }

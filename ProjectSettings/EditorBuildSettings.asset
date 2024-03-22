@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GP8SelectedScene.unity
     guid: aba1f1e7b5bc6404e8aeac0391d5486c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Yaskawa_Control.unity
     guid: 98e557d56855dba4f8634adb5c099be7
   m_configObjects:
