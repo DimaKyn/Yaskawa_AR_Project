@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffectsSrc: {fileID: 586811918}
-  sfxButtonClick: {fileID: 8300000, guid: fee825461e43c0144864ddc4da6382e0, type: 3}
+  sfxButtonClick: {fileID: 8300000, guid: df21fa028a4f6e845b9a42b9e3074d0e, type: 3}
   sfxInfoPop: {fileID: 0}
 --- !u!114 &1300107282
 MonoBehaviour:
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffectsSrc: {fileID: 586811918}
-  sfx: {fileID: 8300000, guid: fee825461e43c0144864ddc4da6382e0, type: 3}
+  sfx: {fileID: 8300000, guid: df21fa028a4f6e845b9a42b9e3074d0e, type: 3}
   scene: DetectGP8Scene
 --- !u!1 &1715277003
 GameObject:
