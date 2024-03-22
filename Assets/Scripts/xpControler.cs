@@ -18,8 +18,10 @@ public class xpControler : MonoBehaviour
     [SerializeField] private float TargetXp;
     [SerializeField] private Image xpProgressBar;
 
-    [SerializeField] private float DelayBetweenXPGains = 0.1f; // Adjust delay as needed
+    [SerializeField] private float DelayBetweenXPGains; // Adjust delay as needed
+
     [SerializeField] private string scene;
+    [SerializeField] private bool toMoveScene;
 
     public GameObject xpGainText;
 
@@ -37,7 +39,7 @@ public class xpControler : MonoBehaviour
         while (CurrentXp < 100)
         {
             CurrentXp += 1;
-            ExperienceText.text = CurrentXp + " / " + TargetXp;
+            ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
             
             yield return new WaitForSeconds(DelayBetweenXPGains*Time.deltaTime);
@@ -58,14 +60,17 @@ public class xpControler : MonoBehaviour
             Level++;
             LevelText.text = "Level : " + Level.ToString();
             xpProgressBar.fillAmount = 0;
-            ExperienceText.text = CurrentXp + " / " + TargetXp;
+            ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
         }
         waitForIt(0.7f);
-        MoveToScene();
+
+        if(toMoveScene){
+            MoveToScene();
+        }
     }
 
     IEnumerator waitForIt(float delay){
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(delay*Time.deltaTime);
     }
 
     public void MoveToScene(){
@@ -76,8 +81,19 @@ public class xpControler : MonoBehaviour
     public void OpenGainText(){
         if(xpGainText != null){
             bool isActive = xpGainText.activeSelf;
-
             xpGainText.SetActive(!isActive);
+            Invoke ("CloseGainText", 2);
         }
+    }
+    public void CloseGainText(){
+        if(xpGainText != null){
+            bool isActive = xpGainText.activeSelf;
+            xpGainText.SetActive(!isActive);
+
+        }
+    }
+    public void playSfx(){
+        soundEffectsSrc.clip = sfx;
+        soundEffectsSrc.Play();
     }
 }
