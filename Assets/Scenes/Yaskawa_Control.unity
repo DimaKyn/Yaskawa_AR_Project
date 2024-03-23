@@ -579,6 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 8810702678111657376}
   source2: {fileID: 4318237887112475487}
+  source3: {fileID: 2467921939748374414}
   drillHead: {fileID: 0}
 --- !u!114 &93131537
 MonoBehaviour:
@@ -2350,6 +2351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 0}
   source2: {fileID: 0}
+  source3: {fileID: 0}
   drillHead: {fileID: 225455465}
 --- !u!114 &760924092
 MonoBehaviour:
@@ -3146,6 +3148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 0}
   source2: {fileID: 0}
+  source3: {fileID: 0}
   drillHead: {fileID: 0}
 --- !u!1 &1073688289
 GameObject:
@@ -3926,7 +3929,7 @@ RectTransform:
   m_Children:
   - {fileID: 1792111890}
   - {fileID: 226264763}
-  m_Father: {fileID: 1554531677}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3998,6 +4001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 0}
   source2: {fileID: 0}
+  source3: {fileID: 0}
   drillHead: {fileID: 0}
 --- !u!114 &1450528437
 MonoBehaviour:
@@ -4270,7 +4274,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 60a0b9d8b5684c4418c9cadc94c11a54, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.592
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4281,7 +4285,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4631,8 +4635,6 @@ Transform:
   m_Children:
   - {fileID: 1798538295}
   - {fileID: 1159923080}
-  - {fileID: 1760426586}
-  - {fileID: 1323125649}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1554531678
@@ -4988,6 +4990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 0}
   source2: {fileID: 0}
+  source3: {fileID: 0}
   drillHead: {fileID: 0}
 --- !u!114 &1676850067
 MonoBehaviour:
@@ -5139,12 +5142,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 760924089}
   - {fileID: 4543237389919138675}
-  m_Father: {fileID: 1554531677}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1760426587
 MonoBehaviour:
@@ -5194,6 +5197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 0}
   source2: {fileID: 0}
+  source3: {fileID: 0}
   drillHead: {fileID: 0}
 --- !u!114 &1760426590
 MonoBehaviour:
@@ -6733,6 +6737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 0}
   source2: {fileID: 0}
+  source3: {fileID: 0}
   drillHead: {fileID: 0}
 --- !u!1 &2108024044
 GameObject:
@@ -7228,6 +7233,7 @@ GameObject:
   - component: {fileID: 1553753386218113064}
   - component: {fileID: 2467921939748374413}
   - component: {fileID: 421973477282067271}
+  - component: {fileID: 2467921939748374414}
   m_Layer: 0
   m_Name: SM_Drill_01_Spindel_B
   m_TagString: Untagged
@@ -7318,6 +7324,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2223611446794064530}
   m_Mesh: {fileID: -9147238245674511526, guid: 4c26f4ed18b44fd409ea35b91d8b0485, type: 3}
+--- !u!82 &2467921939748374414
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223611446794064530}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 59d406ea5e2c4dd4cbd991b98d2d2e30, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!33 &2662866233953973116
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7897,6 +7999,8 @@ AudioSource:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1323125649}
+  - {fileID: 1760426586}
   - {fileID: 1554531677}
   - {fileID: 1958489131}
   - {fileID: 693094129}
