@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/WelcomeScene.unity
     guid: 706f44d4f75e7dd48a71611e59b29612
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DetectGP8Scene.unity
     guid: aa987bc49df565a408b8217141df7ae6
+  - enabled: 1
+    path: Assets/Scenes/tempScene.unity
+    guid: d96c34daaf51bb446847f8f90d28912c
   - enabled: 0
     path: Assets/Scenes/GP8SelectedScene.unity
     guid: aba1f1e7b5bc6404e8aeac0391d5486c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Yaskawa_Control.unity
     guid: 98e557d56855dba4f8634adb5c099be7
   m_configObjects:
