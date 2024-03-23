@@ -9,6 +9,7 @@ public class Drill_1 : MonoBehaviour
 
     public AudioSource source1;
     public AudioSource source2;
+    public AudioSource source3;
 
     public GameObject drillHead;
 
@@ -19,6 +20,10 @@ public class Drill_1 : MonoBehaviour
     {
         if (drillHead != null) {
             drillHead.SetActive(true);
+        }
+        if (source3 != null) {
+            Debug.Log("source3");
+            source3.Play();
         }
         transform.LeanRotate(new Vector3(0, -13, 0), 1);
         Invoke("Axis0_drill_hole_2", 4f);
@@ -126,7 +131,6 @@ public class Drill_1 : MonoBehaviour
     }
 
     /////////////////////////////////////////////////////////////////////
-
 
     public void Axis4_rotate()
     {
