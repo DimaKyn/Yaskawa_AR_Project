@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Axis0 : MonoBehaviour
 {
+    public GameObject pointLight;
+    public GameObject areaLight;
 
-    public Light pointLight;
-    public Light areaLight;
-    public bool isWelding = false;
+    public AudioSource source;
+    public AudioClip clip;
+
+    public GameObject weldHead;
+    
+    private bool isWelding = false;
+
     public void rotateLeft_2_3_deg() {
         transform.LeanRotate(new Vector3(0, -6f, 0), 1f);
     }
@@ -21,9 +27,11 @@ public class Axis0 : MonoBehaviour
     }
 
     public void startWelding() {
+        if (weldHead != null) {
+            weldHead.SetActive(true);
+        }
         Invoke("rotateToCenter", 1f);
-        isWelding = true;
-        ActivateLight();
+        Invoke("ActivateLight", 3f);
         Invoke("rotateLeft_2_3_deg", 3f);
         Invoke("rotateToCenter", 4f);
         Invoke("rotateLeft_2_3_deg", 5f);
@@ -31,19 +39,39 @@ public class Axis0 : MonoBehaviour
         Invoke("rotateRight_2_3_deg", 7f);
         Invoke("rotateToCenter", 8f);
         Invoke("rotateRight_2_3_deg", 9f);
+        
+        Invoke("DeactivateLight", 9f);
+        
         Invoke("rotateToCenter", 10f);
-        isWelding = false;
-        ActivateLight();
+
         Invoke("return0", 11f);
+        Invoke("RemoveHead", 13f);
     }
 
     public void ActivateLight() {
-        pointLight.enabled = !pointLight.enabled;
-        areaLight.enabled = !areaLight.enabled;
+        pointLight.SetActive(true);
+        areaLight.SetActive(true);
+        if (source != null) {
+            source.PlayOneShot(clip);
+        }
+    }
+
+
+
+    public void DeactivateLight() {
+        pointLight.SetActive(false);
+        areaLight.SetActive(false);
+
     }
 
     
     public void return0() {
         transform.LeanRotate(new Vector3(0, 0, 0), 2f);
+    }
+
+    public void RemoveHead() {
+        if (weldHead != null) {
+            weldHead.SetActive(false);
+        }
     }
 }
