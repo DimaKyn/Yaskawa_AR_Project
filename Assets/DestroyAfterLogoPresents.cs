@@ -12,7 +12,7 @@ public class DestroyAfterLogoPresents : MonoBehaviour
     void Start()
     {
         Destroy(screen, 10.9f);
-        Invoke("FadeOut", 4.9f);
+        Invoke("FadeOut", 5.9f);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class DestroyAfterLogoPresents : MonoBehaviour
 
     void FadeOut() {
         rawImage.CrossFadeAlpha(0, 2, false);
-        transform.LeanMoveLocalY(5,3);
-        LeanTween.scale(screen, new Vector3(20, 20, 20), 3).setEase(LeanTweenType.easeInSine);
+        LeanTween.moveY(screen, 3850, 2f).setEase(LeanTweenType.easeOutExpo);
+        LeanTween.scale(screen, new Vector3(80, 80, 80), 3f).setEase(LeanTweenType.easeInSine);
     }
 }
