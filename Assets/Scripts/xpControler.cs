@@ -38,7 +38,7 @@ public class xpControler : MonoBehaviour
     {
         while (CurrentXp < 100)
         {
-            CurrentXp += 1;
+            CurrentXp += 2;
             ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
             
