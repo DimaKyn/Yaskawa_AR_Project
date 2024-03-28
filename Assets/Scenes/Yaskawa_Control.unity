@@ -248,7 +248,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1295391407}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
       propertyPath: m_LocalScale.x
@@ -280,7 +280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -288,7 +288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -977,6 +977,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226264762}
   m_CullTransparentMesh: 1
+--- !u!4 &232791161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6a1ad4ba6691eca468d99b09658d256e, type: 3}
+  m_PrefabInstance: {fileID: 32469655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &246826580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,7 +1082,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.080000006
+      value: 0.08000001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1093,7 +1098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0064
+      value: -0.0063999887
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1481,7 +1486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b730f915c5c8bf94f8c6699201e410f1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3944,13 +3949,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1676850062}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1676850068}
+        m_TargetAssemblyTypeName: Axis2_bolt, Assembly-CSharp
+        m_MethodName: startBolting1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4128,7 +4133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1295391407
 Transform:
   m_ObjectHideFlags: 0
@@ -4143,6 +4148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 987034733}
+  - {fileID: 232791161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323125645
@@ -5088,7 +5094,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.080000006
+      value: 0.08000001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalScale.y
@@ -5104,7 +5110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0064
+      value: -0.0063999887
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 185bae949c744c942a89525c028727a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5233,6 +5239,7 @@ GameObject:
   - component: {fileID: 1676850065}
   - component: {fileID: 1676850066}
   - component: {fileID: 1676850067}
+  - component: {fileID: 1676850068}
   m_Layer: 0
   m_Name: Axis2
   m_TagString: Untagged
@@ -5315,6 +5322,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d002d97b0256fda44b0c53478f7cc4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1676850068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676850062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0b38eb2c94dac45893966187af2370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1715910050
@@ -7053,6 +7072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: metalPlate_no_holes
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd6ba9f37910f7942bb66016590e1b6e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8513,7 +8536,6 @@ SceneRoots:
   - {fileID: 1561453732}
   - {fileID: 1526204291}
   - {fileID: 367525837}
-  - {fileID: 32469655}
   - {fileID: 1295391407}
   - {fileID: 2013093377}
   - {fileID: 460519314}

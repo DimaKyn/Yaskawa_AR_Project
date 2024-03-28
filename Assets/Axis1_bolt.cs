@@ -15,19 +15,19 @@ public class Axis1_bolt : MonoBehaviour
     }
 
     void MoveToPickBolt1() {
-        transform.LeanRotate(new Vector3(0, -20f, -55), 1f);
-    }
-
-    void PickUpBolt() {
         transform.LeanRotate(new Vector3(0, -20f, -58), 1f);
     }
 
+    void PickUpBolt() {
+        transform.LeanRotate(new Vector3(0, -20f, -52), 1f);
+    }
+
     void MoveToScrewBolt1() {
-        transform.LeanRotate(new Vector3(0, 2.6f, -52), 1f);
+        transform.LeanRotate(new Vector3(0, -2.4f, -52), 1f);
     }
 
     void LowerToBoltIn() {
-        transform.LeanRotate(new Vector3(0, 2.6f, -55), 1.5f);
+        transform.LeanRotate(new Vector3(0, -2.4f, -52), 1.5f);
     }
 
 

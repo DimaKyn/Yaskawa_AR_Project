@@ -7,8 +7,8 @@ public class Axis0_bolt : MonoBehaviour
     public GameObject bolt;
     public void startBolting1() {
         transform.LeanRotate(new Vector3(0, -20f, 0), 1f);
-        Invoke("ActivateBolt", 3f);
-        //Invoke("ScrewBolt1", 4f);
+        Invoke("ActivateBolt", 2f);
+        Invoke("ScrewBolt1", 4f);
     }
     
     // Activate bolt, now the robot has it in its head, ready to bolt
@@ -18,7 +18,7 @@ public class Axis0_bolt : MonoBehaviour
 
     void ScrewBolt1() {
         Debug.Log("Screwing bolt");
-        transform.LeanRotate(new Vector3(0, 2.6f, 0), 1f);
+        transform.LeanRotate(new Vector3(0, -2.3f, 0), 1f);
     }
 
 
