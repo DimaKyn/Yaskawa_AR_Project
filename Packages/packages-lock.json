@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< Updated upstream
     "com.autodesk.fbx": {
       "version": "4.2.1",
       "depth": 1,
@@ -187,6 +188,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

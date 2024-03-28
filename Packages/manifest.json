@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< Updated upstream
     "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.21.3.tgz",
     "com.unity.animation.rigging": "1.2.1",
     "com.unity.collab-proxy": "2.3.1",
@@ -9,6 +10,8 @@
     "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.1",
+=======
+>>>>>>> Stashed changes
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
