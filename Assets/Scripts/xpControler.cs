@@ -26,7 +26,12 @@ public class xpControler : MonoBehaviour
     public GameObject xpGainText;
 
     void Start(){
-        xpProgressBar.fillAmount = (CurrentXp / TargetXp);
+        if (Level >= 3){
+            return;
+        }
+        else{
+            xpProgressBar.fillAmount = (CurrentXp / TargetXp);
+        }
     }
 
     public void buttonPressed()
@@ -79,6 +84,9 @@ public class xpControler : MonoBehaviour
 
     
     public void OpenGainText(){
+        if(Level >= 3){
+            return;
+        }
         if(xpGainText != null){
             bool isActive = xpGainText.activeSelf;
             xpGainText.SetActive(!isActive);
