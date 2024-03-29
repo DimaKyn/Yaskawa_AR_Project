@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 using System.Threading;
+using Unity.VisualScripting;
 
 public class Drill_1 : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Drill_1 : MonoBehaviour
     public AudioSource source3;
 
     public GameObject drillHead;
+    public GameObject plateNoHoles;
+    public GameObject plateOneHole;
+    public GameObject plateTwoHoles;
 
 
     public static int drilled = 0;
@@ -53,6 +57,10 @@ public class Drill_1 : MonoBehaviour
         if (source1 != null) {
             Invoke("PlaySound1", 0.5f);
         }
+        if (plateNoHoles != null)
+        {
+            plateNoHoles.SetActive(false);
+        }
         Invoke("Axis1_return", 1f);
         
     }
@@ -69,7 +77,10 @@ public class Drill_1 : MonoBehaviour
         if (source2 != null) {
             Invoke("PlaySound2", 0.5f);
         }
-        
+        if (plateOneHole!= null )
+        {  
+            plateOneHole.SetActive(false);
+        }
         Invoke("Axis1_return2", 1f);
     }
 
