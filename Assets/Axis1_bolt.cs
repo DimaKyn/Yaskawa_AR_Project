@@ -10,8 +10,6 @@ public class Axis1_bolt : MonoBehaviour
         Invoke("MoveToPickBolt1", 1f);
         Invoke("PickUpBolt", 2f);
         Invoke("MoveToScrewBolt1", 3f);
-        Invoke("LowerToBoltIn", 4f);
-
     }
 
     void MoveToPickBolt1() {
@@ -23,12 +21,42 @@ public class Axis1_bolt : MonoBehaviour
     }
 
     void MoveToScrewBolt1() {
-        transform.LeanRotate(new Vector3(0, -2.4f, -52), 1f);
+        transform.LeanRotate(new Vector3(0, -2.3f, -52), 1f);
     }
 
-    void LowerToBoltIn() {
-        transform.LeanRotate(new Vector3(0, -2.4f, -52), 1.5f);
+    public void startBolting2() {
+        Invoke("MoveToPickBolt2", 0f);
+        Invoke("PickUpBolt", 1f);
+        Invoke("MoveToPickBolt2", 2f);
+        Invoke("MoveToScrewBolt2", 3f);
     }
+
+    void MoveToPickBolt2() {
+        transform.LeanRotate(new Vector3(0, -20f, -52), 1f);
+    }
+
+    void MoveToScrewBolt2() {
+        transform.LeanRotate(new Vector3(0, -2.3f, -55), 1f);
+    }
+
+    public void startBolting3() {
+        Invoke("MoveToPickBolt2", 0f);
+        Invoke("PickUpBolt", 1f);
+        Invoke("MoveToPickBolt2", 2f);
+        Invoke("MoveToScrewBolt3", 3f);
+        Invoke("MoveToStart", 8f);
+    }
+
+    void MoveToScrewBolt3() {
+        transform.LeanRotate(new Vector3(0, 2.3f, -55), 1f);
+    }
+
+    void MoveToStart() {
+        transform.LeanRotate(new Vector3(0, 0, 0), 1f);
+    }
+
+
+
 
 
 }
