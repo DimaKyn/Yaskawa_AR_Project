@@ -11,7 +11,7 @@ public class EventClick : MonoBehaviour, IPointerClickHandler
     public GameObject torus, torus2, torus3;
     public int step = 0; 
 
-    public GameObject Object, boltingScene;
+    public GameObject Object, noRewardCanvas, boltingScene;
     public int count;
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -66,12 +66,25 @@ public class EventClick : MonoBehaviour, IPointerClickHandler
         torus3.SetActive(true);
     }
     public void unhideReward(){
+        if (noRewardCanvas != null && count > 0) {
+            bool isActiveNoRewards = noRewardCanvas.activeSelf;
+            noRewardCanvas.SetActive(!isActiveNoRewards);
+        }
+        
         if(Object != null && count == 0){
             count++;
             bool isActive = Object.activeSelf;
             Object.SetActive(!isActive);
         }
+
         hideWelding();
+        torus.SetActive(true);
+        torus2.SetActive(false);
+        torus3.SetActive(false);
+        yaskawaRobot[4].GetComponent<BoltingHead_bolt>().bolt1.SetActive(false);
+        yaskawaRobot[4].GetComponent<BoltingHead_bolt>().bolt2.SetActive(false);
+        yaskawaRobot[4].GetComponent<BoltingHead_bolt>().bolt3.SetActive(false);
+
     }
 
     public void hideWelding(){
