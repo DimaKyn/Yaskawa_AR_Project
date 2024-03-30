@@ -10,6 +10,8 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
 
     public GameObject[] yaskawaRobot;
     public GameObject torus;
+    public GameObject Object, weldingScene;
+    public int count;
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Clicked");
@@ -21,7 +23,21 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
         yaskawaRobot[1].GetComponent<Axis1_weld>().startWelding();
         yaskawaRobot[2].GetComponent<Axis2_weld>().startWelding();
         yaskawaRobot[3].GetComponent<Axis3_weld>().rotateLeft60Deg();
+
+        Invoke("unhideReward", 10);
     }
-    //Takes 10 seconds
-    
+    public void unhideReward(){
+        if(Object != null && count == 0){
+            count++;
+            bool isActive = Object.activeSelf;
+            Object.SetActive(!isActive);
+        }
+        hideWelding();
+    }
+
+    public void hideWelding(){
+        if(weldingScene != null){
+            weldingScene.SetActive(false);
+        }
+    }
 }
