@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1416,6 +1416,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd6ba9f37910f7942bb66016590e1b6e, type: 3}
       propertyPath: m_Name
       value: metalPlate_no_holes
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd6ba9f37910f7942bb66016590e1b6e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7417,7 +7421,7 @@ GameObject:
   - component: {fileID: 1831500458}
   - component: {fileID: 1831500457}
   - component: {fileID: 1831500456}
-  - component: {fileID: 1831500455}
+  - component: {fileID: 1831500459}
   m_Layer: 0
   m_Name: Ground Plane Stage
   m_TagString: Untagged
@@ -7425,23 +7429,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1831500455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831500454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1308684972, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1831500457}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: 
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1831500457}
 --- !u!114 &1831500456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7506,7 +7493,7 @@ MonoBehaviour:
   mSelectedStageType: 0
   mPlaneReference: {fileID: 0}
   mMidAirReference: {fileID: 0}
-  mPreview: {fileID: 1831500455}
+  mPreview: {fileID: 1831500459}
 --- !u!4 &1831500458
 Transform:
   m_ObjectHideFlags: 0
@@ -7524,6 +7511,23 @@ Transform:
   - {fileID: 2109009561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831500459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831500454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1308684972, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1831500457}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: 
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1831500457}
 --- !u!1001 &1863817822
 PrefabInstance:
   m_ObjectHideFlags: 0
