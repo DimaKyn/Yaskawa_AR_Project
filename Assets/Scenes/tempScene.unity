@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2618,7 +2618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &348330952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3220,6 +3220,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397930680}
   m_CullTransparentMesh: 1
+--- !u!1 &487316529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 185bae949c744c942a89525c028727a6, type: 3}
+  m_PrefabInstance: {fileID: 856736286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494243991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5511,7 +5516,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6495,7 +6500,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.8000001, y: 0.8000001, z: 0.8000001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 540763541}
@@ -7738,11 +7743,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yaskawaRobot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 540763540}
+  - {fileID: 1486038458}
+  - {fileID: 68442370}
+  - {fileID: 826876711}
+  - {fileID: 1482621171}
   torus: {fileID: 0}
   torus2: {fileID: 1229762298}
   torus3: {fileID: 2034627475}
@@ -8953,9 +8958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d908fb091feb74bbfc97cb4289c442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bolt1: {fileID: 0}
-  bolt2: {fileID: 0}
-  bolt3: {fileID: 0}
+  bolt1: {fileID: 487316529}
+  bolt2: {fileID: 1952362929}
+  bolt3: {fileID: 1764938956}
   boltOnHead: {fileID: 363558968}
 --- !u!1 &1486038458
 GameObject:
@@ -9309,7 +9314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1525133926
 Transform:
   m_ObjectHideFlags: 0
@@ -9319,8 +9324,8 @@ Transform:
   m_GameObject: {fileID: 1525133925}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_LocalPosition: {x: -0.049999997, y: 0, z: -0.012499999}
+  m_LocalScale: {x: 1.0625, y: 1.0625, z: 1.0625}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2096731635}
@@ -9636,8 +9641,8 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1525133926}
   - {fileID: 348330953}
+  - {fileID: 1525133926}
   - {fileID: 876333351}
   - {fileID: 1323125649}
   - {fileID: 350042881}
@@ -10142,6 +10147,11 @@ MonoBehaviour:
   Canva1: {fileID: 1762077048}
   Canva2: {fileID: 0}
   PlaneFinder: {fileID: 0}
+--- !u!1 &1764938956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 185bae949c744c942a89525c028727a6, type: 3}
+  m_PrefabInstance: {fileID: 1162953394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785033224
 GameObject:
   m_ObjectHideFlags: 0
@@ -11302,7 +11312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1976
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11452,10 +11462,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yaskawaRobot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 540763540}
+  - {fileID: 1486038458}
+  - {fileID: 68442370}
+  - {fileID: 1199898292}
   torus: {fileID: 1877232564}
 --- !u!135 &1877232566
 SphereCollider:
@@ -11476,7 +11486,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.05
+  m_Radius: 0.0105
   m_Center: {x: 0, y: -0.0000000018626451, z: -9.313226e-10}
 --- !u!114 &1877232567
 MonoBehaviour:
@@ -11691,6 +11701,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb750624d68ee674eb1d4ae90380bfd0, type: 3}
   m_PrefabInstance: {fileID: 1939157029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1952362929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 185bae949c744c942a89525c028727a6, type: 3}
+  m_PrefabInstance: {fileID: 845171492}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1954423993
 PrefabInstance:
@@ -12800,11 +12815,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yaskawaRobot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 540763540}
+  - {fileID: 1486038458}
+  - {fileID: 68442370}
+  - {fileID: 826876711}
+  - {fileID: 1482621171}
   torus: {fileID: 0}
   torus2: {fileID: 0}
   torus3: {fileID: 2034627475}
@@ -13551,11 +13566,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yaskawaRobot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 540763540}
+  - {fileID: 1486038458}
+  - {fileID: 68442370}
+  - {fileID: 826876711}
+  - {fileID: 1482621171}
   torus: {fileID: 2096731637}
   torus2: {fileID: 1229762298}
   torus3: {fileID: 0}

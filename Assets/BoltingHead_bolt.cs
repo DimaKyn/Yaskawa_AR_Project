@@ -12,7 +12,7 @@ public class BoltingHead_bolt : MonoBehaviour
         Invoke("Bolt1", 5f);
         Invoke("ActivateBolt1", 6f);
         Invoke("LiftAfterBolt1", 6f);
-        Invoke("ActivateTorus2", 7f);
+        //Invoke("ActivateTorus2", 7f);
     }
 
     void Bolt1() {
