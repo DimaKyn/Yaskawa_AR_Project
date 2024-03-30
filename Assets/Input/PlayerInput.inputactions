@@ -1,0 +1,34 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Bolt",
+            "id": "4e30d2de-4801-471c-9e62-1e1b302bdd46",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "131629c1-bd3e-42a0-b5bf-cfcd6d8902eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "165c55c3-c3ff-45c4-865a-4db56f2fec90",
+                    "path": "<Touchscreen>/touch*/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
