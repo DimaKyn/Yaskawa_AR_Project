@@ -22,6 +22,6 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
         yaskawaRobot[2].GetComponent<Axis2_weld>().startWelding();
         yaskawaRobot[3].GetComponent<Axis3_weld>().rotateLeft60Deg();
     }
-
+    //Takes 10 seconds
     
 }
