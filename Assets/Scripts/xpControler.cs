@@ -100,13 +100,13 @@ public class xpControler : MonoBehaviour
         soundEffectsSrc.Play();
     }
 
-    public void MachineOperations(float CurrentXp){
-        if(CurrentXp < 100){
+    public void MachineOperations(){
+        if(CurrentXp + 34 < 100){
             CurrentXp += 34;
             ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
         }
-        else{
+        else if(CurrentXp + 34 > 100){
             MaxLevel();
         }
     }
