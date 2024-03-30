@@ -26,12 +26,7 @@ public class xpControler : MonoBehaviour
     public GameObject xpGainText;
 
     void Start(){
-        if (Level >= 3){
-            return;
-        }
-        else{
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
-        }
     }
 
     public void buttonPressed()
@@ -103,5 +98,21 @@ public class xpControler : MonoBehaviour
     public void playSfx(){
         soundEffectsSrc.clip = sfx;
         soundEffectsSrc.Play();
+    }
+
+    public void MachineOperations(float CurrentXp){
+        if(CurrentXp < 100){
+            CurrentXp += 34;
+            ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
+            xpProgressBar.fillAmount = (CurrentXp / TargetXp);
+        }
+        else{
+            MaxLevel();
+        }
+    }
+    public void MaxLevel(){
+        LevelText.text = "Max Level";
+        xpProgressBar.fillAmount = 0;
+        ExperienceText.text = "All Missions Complete!";
     }
 }
