@@ -106,7 +106,7 @@ public class xpControler : MonoBehaviour
             ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
         }
-        else if(CurrentXp + 34 > 100 && Level == 3){
+        else if(CurrentXp + 34 > 100 && Level > 3){
             MaxLevel();
         }
     }
