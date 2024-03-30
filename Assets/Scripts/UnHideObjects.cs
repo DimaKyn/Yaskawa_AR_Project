@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UnHideObjects : MonoBehaviour
 {
-    public GameObject Object1, Object2, Object3;
+    public GameObject Object1, Object2, Object3, Object4;
 
     public void UnHideObject1(){
         if(Object1 != null){
@@ -31,5 +31,14 @@ public class UnHideObjects : MonoBehaviour
         UnHideObject1();
         UnHideObject2();
         UnHideObject3();
+    }
+
+    public void specialUnhide(){
+        if(Object4 != null){
+            bool isActive = Object4.activeSelf;
+            if(!isActive){
+                Object4.SetActive(true);
+            }
+        }
     }
 }
