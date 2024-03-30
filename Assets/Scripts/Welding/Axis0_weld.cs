@@ -10,10 +10,6 @@ public class Axis0 : MonoBehaviour
     public AudioSource source;
     public AudioClip clip;
 
-    public GameObject weldHead;
-    
-    private bool isWelding = false;
-
     public void rotateLeft_2_3_deg() {
         transform.LeanRotate(new Vector3(0, -6f, 0), 1f);
     }
@@ -27,9 +23,6 @@ public class Axis0 : MonoBehaviour
     }
 
     public void startWelding() {
-        if (weldHead != null) {
-            weldHead.SetActive(true);
-        }
         Invoke("rotateToCenter", 1f);
         Invoke("ActivateLight", 3f);
         Invoke("rotateLeft_2_3_deg", 3f);
@@ -45,7 +38,6 @@ public class Axis0 : MonoBehaviour
         Invoke("rotateToCenter", 10f);
 
         Invoke("return0", 11f);
-        Invoke("RemoveHead", 13f);
     }
 
     public void ActivateLight() {
@@ -69,9 +61,4 @@ public class Axis0 : MonoBehaviour
         transform.LeanRotate(new Vector3(0, 0, 0), 2f);
     }
 
-    public void RemoveHead() {
-        if (weldHead != null) {
-            weldHead.SetActive(false);
-        }
-    }
 }
