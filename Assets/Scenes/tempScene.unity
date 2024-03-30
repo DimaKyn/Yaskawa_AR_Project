@@ -995,7 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ec981e9b5241542a87fdf76465005a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canva1: {fileID: 0}
+  Canva1: {fileID: 1323125645}
   Canva2: {fileID: 95975621}
   PlaneFinder: {fileID: 2062024869}
 --- !u!114 &95975624
@@ -1069,6 +1069,18 @@ MonoBehaviour:
       - m_Target: {fileID: 835163411}
         m_TargetAssemblyTypeName: SoundEffectsPlayer, Assembly-CSharp
         m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 95975623}
+        m_TargetAssemblyTypeName: HideObjects, Assembly-CSharp
+        m_MethodName: HideCanva1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1168,6 +1180,7 @@ MonoBehaviour:
   Object1: {fileID: 1792111889}
   Object2: {fileID: 226264762}
   Object3: {fileID: 395074470}
+  Object4: {fileID: 0}
 --- !u!114 &96989241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1891,6 +1904,7 @@ MonoBehaviour:
   Object1: {fileID: 835163406}
   Object2: {fileID: 0}
   Object3: {fileID: 0}
+  Object4: {fileID: 0}
 --- !u!1 &154391952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,6 +2224,7 @@ MonoBehaviour:
   Object1: {fileID: 835163406}
   Object2: {fileID: 0}
   Object3: {fileID: 0}
+  Object4: {fileID: 0}
 --- !u!1 &226264762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3277,6 +3292,7 @@ MonoBehaviour:
   Object1: {fileID: 0}
   Object2: {fileID: 0}
   Object3: {fileID: 0}
+  Object4: {fileID: 0}
 --- !u!4 &348330953
 Transform:
   m_ObjectHideFlags: 0
@@ -6306,6 +6322,7 @@ MonoBehaviour:
   Object1: {fileID: 1792111889}
   Object2: {fileID: 226264762}
   Object3: {fileID: 395074470}
+  Object4: {fileID: 0}
 --- !u!114 &917826209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7754,6 +7771,7 @@ GameObject:
   - component: {fileID: 1121055443}
   - component: {fileID: 1121055442}
   - component: {fileID: 1121055445}
+  - component: {fileID: 1121055446}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -7861,6 +7879,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1121055446}
+        m_TargetAssemblyTypeName: UnHideObjects, Assembly-CSharp
+        m_MethodName: unHideAll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1121055443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7914,6 +7944,22 @@ MonoBehaviour:
   Canva1: {fileID: 0}
   Canva2: {fileID: 95975621}
   PlaneFinder: {fileID: 2062024869}
+--- !u!114 &1121055446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121055440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2562558d032a418489001e32f0a4dbd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object1: {fileID: 1323125645}
+  Object2: {fileID: 0}
+  Object3: {fileID: 0}
+  Object4: {fileID: 0}
 --- !u!1 &1149682269
 GameObject:
   m_ObjectHideFlags: 0
@@ -8111,6 +8157,7 @@ MonoBehaviour:
   Object1: {fileID: 835163406}
   Object2: {fileID: 0}
   Object3: {fileID: 0}
+  Object4: {fileID: 0}
 --- !u!1001 &1162953394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9213,6 +9260,7 @@ MonoBehaviour:
   Object1: {fileID: 876333350}
   Object2: {fileID: 348330951}
   Object3: {fileID: 1525133925}
+  Object4: {fileID: 0}
 --- !u!1 &1341350912
 GameObject:
   m_ObjectHideFlags: 0
@@ -10107,6 +10155,7 @@ GameObject:
   - component: {fileID: 1506290088}
   - component: {fileID: 1506290087}
   - component: {fileID: 1506290086}
+  - component: {fileID: 1506290089}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -10214,6 +10263,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1506290089}
+        m_TargetAssemblyTypeName: UnHideObjects, Assembly-CSharp
+        m_MethodName: UnHideObject1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1506290087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10252,6 +10313,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506290084}
   m_CullTransparentMesh: 1
+--- !u!114 &1506290089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506290084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2562558d032a418489001e32f0a4dbd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object1: {fileID: 835163406}
+  Object2: {fileID: 0}
+  Object3: {fileID: 0}
+  Object4: {fileID: 0}
 --- !u!1 &1516694950
 GameObject:
   m_ObjectHideFlags: 0
@@ -10673,6 +10750,7 @@ MonoBehaviour:
   Object1: {fileID: 1792111889}
   Object2: {fileID: 226264762}
   Object3: {fileID: 395074470}
+  Object4: {fileID: 0}
 --- !u!114 &1670347298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11483,6 +11561,7 @@ MonoBehaviour:
   Object1: {fileID: 1792111889}
   Object2: {fileID: 226264762}
   Object3: {fileID: 395074470}
+  Object4: {fileID: 0}
 --- !u!114 &1762077055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14340,6 +14419,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2062024875}
+        m_TargetAssemblyTypeName: UnHideObjects, Assembly-CSharp
+        m_MethodName: specialUnhide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   mDisplayAdvanced: 1
 --- !u!114 &2062024871
 MonoBehaviour:
@@ -14446,8 +14537,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object1: {fileID: 95975621}
-  Object2: {fileID: 0}
+  Object2: {fileID: 1323125645}
   Object3: {fileID: 0}
+  Object4: {fileID: 1323125645}
 --- !u!1 &2062651342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
