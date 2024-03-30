@@ -11,7 +11,7 @@ public class DestroyAfterLogoPresents : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(screen, 10.9f);
+        Destroy(screen, 8f);
         Invoke("FadeOut", 5.9f);
     }
 
