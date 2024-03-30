@@ -5,7 +5,6 @@ using UnityEngine;
 public class HideObjects : MonoBehaviour
 {
     public GameObject Canva1, Canva2, PlaneFinder;
-    [SerializeField] private bool True;
 
     public void HideCanva1(){
         if(Canva1 != null){
