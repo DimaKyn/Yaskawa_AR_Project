@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -586,6 +586,9 @@ MonoBehaviour:
   source2: {fileID: 4318237887112475487}
   source3: {fileID: 2467921939748374414}
   drillHead: {fileID: 0}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!114 &93131537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2563,6 +2566,9 @@ MonoBehaviour:
   source2: {fileID: 0}
   source3: {fileID: 0}
   drillHead: {fileID: 225455465}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!114 &760924092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3790,6 +3796,9 @@ MonoBehaviour:
   source2: {fileID: 0}
   source3: {fileID: 0}
   drillHead: {fileID: 0}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!114 &1055052723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,6 +4942,9 @@ MonoBehaviour:
   source2: {fileID: 0}
   source3: {fileID: 0}
   drillHead: {fileID: 0}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!114 &1450528437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5556,7 +5568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2345
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5620,7 +5632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3983353918920824184, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: -3983353918920824184, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5667,15 +5679,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1537947450}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1537947449}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1537947448}
     - targetCorrespondingSourceObject: {fileID: -5824510187379060028, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1537947447}
+      addedObject: {fileID: 1537947454}
+    - targetCorrespondingSourceObject: {fileID: -5824510187379060028, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1537947455}
   m_SourcePrefab: {fileID: 100100000, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
 --- !u!4 &1537947444 stripped
 Transform:
@@ -5692,58 +5701,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
   m_PrefabInstance: {fileID: 1537947443}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1537947447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537947445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a458e8522b827f340a17c13bf285fdb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yaskawaRobot: []
-  torus: {fileID: 0}
-  torus2: {fileID: 0}
-  torus3: {fileID: 0}
-  step: 0
---- !u!114 &1537947448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537947446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db5afca7a1f3c340aca28f9bf30a293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yaskawaRobot: []
-  torus: {fileID: 0}
---- !u!135 &1537947449
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537947446}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.04
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1537947450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5756,6 +5713,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e387b7693b43a6447b9cd0d21871fe5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &1537947454
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537947445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.05
+  m_Center: {x: 0, y: -0.0000000018626451, z: -9.313226e-10}
+--- !u!114 &1537947455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537947445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db5afca7a1f3c340aca28f9bf30a293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yaskawaRobot:
+  - {fileID: 760924088}
+  - {fileID: 93131533}
+  - {fileID: 1676850062}
+  - {fileID: 1450528433}
+  torus: {fileID: 1537947446}
 --- !u!1 &1554531674
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,6 +6225,9 @@ MonoBehaviour:
   source2: {fileID: 0}
   source3: {fileID: 0}
   drillHead: {fileID: 0}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!114 &1676850067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6453,6 +6452,9 @@ MonoBehaviour:
   source2: {fileID: 0}
   source3: {fileID: 0}
   drillHead: {fileID: 0}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!114 &1760426590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8433,6 +8435,9 @@ MonoBehaviour:
   source2: {fileID: 0}
   source3: {fileID: 0}
   drillHead: {fileID: 0}
+  plateNoHoles: {fileID: 0}
+  plateOneHole: {fileID: 0}
+  plateTwoHoles: {fileID: 0}
 --- !u!1 &2071481713
 GameObject:
   m_ObjectHideFlags: 0
@@ -8714,7 +8719,7 @@ Transform:
   m_GameObject: {fileID: 2118270262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.5, z: -2.5}
+  m_LocalPosition: {x: 1, y: 0.5, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
