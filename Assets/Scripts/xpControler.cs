@@ -101,12 +101,12 @@ public class xpControler : MonoBehaviour
     }
 
     public void MachineOperations(){
-        if(CurrentXp + 34 < 100){
+        if(CurrentXp + 34 < 100 && Level == 3){
             CurrentXp += 34;
             ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
         }
-        else if(CurrentXp + 34 > 100){
+        else if(CurrentXp + 34 > 100 && Level == 3){
             MaxLevel();
         }
     }
