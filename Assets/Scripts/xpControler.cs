@@ -23,7 +23,7 @@ public class xpControler : MonoBehaviour
     [SerializeField] private string scene;
     [SerializeField] private bool toMoveScene;
 
-    public GameObject xpGainText;
+    public GameObject xpGainText, endBtn;
 
     void Start(){
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
@@ -116,5 +116,14 @@ public class xpControler : MonoBehaviour
         LevelText.text = "Max Level";
         xpProgressBar.fillAmount = 0;
         ExperienceText.text = "All Missions Complete!";
+        unhideEndBtn();
+    }
+
+    public void unhideEndBtn(){
+        if(endBtn != null){
+            bool isActive = endBtn.activeSelf;
+
+            endBtn.SetActive(!isActive);
+        }
     }
 }
