@@ -31,7 +31,9 @@ public class xpControler : MonoBehaviour
 
     public void buttonPressed()
     {
-        StartCoroutine(AddXPWithDelay());
+        if(Level < 3){
+            StartCoroutine(AddXPWithDelay());
+        }
     }
 
     IEnumerator AddXPWithDelay()
@@ -45,13 +47,13 @@ public class xpControler : MonoBehaviour
             yield return new WaitForSeconds(DelayBetweenXPGains*Time.deltaTime);
 
             if (CurrentXp == 100){
-                ExperienceController(CurrentXp);
+                ExperienceController();
                 break;
             }
         }
     }
 
-    public void ExperienceController(float CurrentXp){
+    public void ExperienceController(){
         soundEffectsSrc.clip = sfx;
         soundEffectsSrc.Play();
         waitForIt(0.5f);
@@ -101,12 +103,12 @@ public class xpControler : MonoBehaviour
     }
 
     public void MachineOperations(){
-        if(CurrentXp + 34 < 100 && Level == 3){
+        if(CurrentXp < 100 && Level == 3){
             CurrentXp += 34;
             ExperienceText.text = CurrentXp + " / " + TargetXp + " XP";
             xpProgressBar.fillAmount = (CurrentXp / TargetXp);
         }
-        else if(CurrentXp + 34 > 100 && Level > 3){
+        if(CurrentXp > 100 && Level == 3){
             MaxLevel();
         }
     }
