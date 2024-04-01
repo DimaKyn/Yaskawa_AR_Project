@@ -10,19 +10,27 @@ public class Axis0 : MonoBehaviour
     public AudioSource source;
     public AudioClip clip;
 
-    public void rotateLeft_2_3_deg() {
+    // Rotate the object to the left by 2.3 degrees
+    public void rotateLeft_2_3_deg()
+    {
         transform.LeanRotate(new Vector3(0, -6f, 0), 1f);
     }
 
-    public void rotateToCenter() {
+    // Rotate the object to the center position
+    public void rotateToCenter()
+    {
         transform.LeanRotate(new Vector3(0, 1, 0), 1f);
     }
 
-    public void rotateRight_2_3_deg() {
+    // Rotate the object to the right by 2.3 degrees
+    public void rotateRight_2_3_deg()
+    {
         transform.LeanRotate(new Vector3(0, -2.3f, 0), 1f);
     }
 
-    public void startWelding() {
+    // Start the welding process
+    public void startWelding()
+    {
         Invoke("rotateToCenter", 1f);
         Invoke("ActivateLight", 3f);
         Invoke("rotateLeft_2_3_deg", 3f);
@@ -34,30 +42,31 @@ public class Axis0 : MonoBehaviour
         Invoke("rotateRight_2_3_deg", 9f);
         
         Invoke("DeactivateLight", 9f);
-        
         Invoke("rotateToCenter", 10f);
-
         Invoke("return0", 11f);
     }
 
-    public void ActivateLight() {
+    // Activate the point light and area light
+    public void ActivateLight()
+    {
         pointLight.SetActive(true);
         areaLight.SetActive(true);
-        if (source != null) {
+        if (source != null)
+        {
             source.PlayOneShot(clip);
         }
     }
 
-
-
-    public void DeactivateLight() {
+    // Deactivate the point light and area light
+    public void DeactivateLight()
+    {
         pointLight.SetActive(false);
         areaLight.SetActive(false);
-
     }
 
-    
-    public void return0() {
+    // Rotate the object back to the initial position
+    public void return0()
+    {
         transform.LeanRotate(new Vector3(0, 0, 0), 2f);
     }
 

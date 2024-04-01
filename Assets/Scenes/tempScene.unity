@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -707,6 +707,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiltSpeed: 50
   targetTiltAngle: 90
+  isTiltedUp: 1
+  degToRotate: 359
+  newTiltAngle: 359
 --- !u!1 &89572908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,7 +3279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &348330952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6693,7 +6696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5324ab2addac90d41b46206a3d021322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 1500
+  rotateSpeed: 1800
 --- !u!1 &999196239
 GameObject:
   m_ObjectHideFlags: 0
@@ -10329,68 +10332,6 @@ MonoBehaviour:
   Object2: {fileID: 0}
   Object3: {fileID: 0}
   Object4: {fileID: 0}
---- !u!1 &1516694950
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1516694951}
-  - component: {fileID: 1516694952}
-  m_Layer: 0
-  m_Name: TouchManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1516694951
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516694950}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.055079956, z: -0, w: 0.9984819}
-  m_LocalPosition: {x: 1.821, y: 0.8253512, z: 1.537}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 6.315, z: 0}
---- !u!114 &1516694952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516694950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 78ccdd5bf9050554a95d511906e9625d, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Touch
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &1523957642
 GameObject:
   m_ObjectHideFlags: 0
@@ -12958,7 +12899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 82117870ee1f2554399b463faf5c8e93, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13414,6 +13355,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fb750624d68ee674eb1d4ae90380bfd0, type: 3}
       propertyPath: m_Name
       value: Bolting_head 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb750624d68ee674eb1d4ae90380bfd0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15305,7 +15250,6 @@ SceneRoots:
   - {fileID: 2062024873}
   - {fileID: 693094129}
   - {fileID: 1218322391}
-  - {fileID: 1516694951}
   - {fileID: 872669865}
   - {fileID: 1561453732}
   - {fileID: 1799167882}
