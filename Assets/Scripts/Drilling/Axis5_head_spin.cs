@@ -6,12 +6,11 @@ public class Axis5_head_spin : MonoBehaviour
 {
     [SerializeField]
     public float rotateSpeed = 1800;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame

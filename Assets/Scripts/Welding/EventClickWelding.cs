@@ -18,6 +18,7 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
         Debug.Log("Clicked");
     }
 
+    // This function is called when the user taps the green circle
     private void OnMouseUpAsButton() {
         torus.SetActive(false);
         yaskawaRobot[0].GetComponent<Axis0>().startWelding();
@@ -27,6 +28,9 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
 
         Invoke("unhideReward", 10);
     }
+    
+    // This function is used to determine if a user has already completed the welding task
+    // To decide if to display a badge as a reward or not
     public void unhideReward(){
         if (noRewardCanvas != null && count > 0) {
             bool isActiveNoRewards = noRewardCanvas.activeSelf;
@@ -43,6 +47,7 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
         hideWelding();
     }
 
+    // This function is used to hide the welding task after completion
     public void hideWelding(){
         if(weldingScene != null){
             weldingScene.SetActive(false);

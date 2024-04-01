@@ -13,18 +13,17 @@ public class weldFlicker : MonoBehaviour
 
     public float timer;
 
-    // Start is called before the first frame update
     void Start()
     {
         timer = Random.Range(minTime, maxTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
         lightFlicker();
     }
 
+    // Function to control light flickering
     public void lightFlicker() {
         if (timer > 0) {
             timer -= Time.deltaTime;
