@@ -18,12 +18,14 @@ public class AlwaysLookAtCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= updateInterval)
-        {
-            ScaleAndLookAt();
-            timer = 0f;
-        }
+        // timer += Time.deltaTime;
+        // if (timer >= updateInterval)
+        // {
+        //     updateInterval = 1f;
+            
+        //     timer = 0f;
+        // }
+        ScaleAndLookAt();
     }
 
     void ScaleAndLookAt()

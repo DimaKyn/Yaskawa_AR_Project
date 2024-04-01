@@ -8,17 +8,19 @@ public class DestroyAfterLogoPresents : MonoBehaviour
 {
     public GameObject screen;
     public RawImage rawImage;
+    public GameObject audioControlLogo;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(screen, 8f);
+        Destroy(screen, 7.5f);
+        Invoke("SetAudioControlLogoActive", 7f);
         Invoke("FadeOut", 5.9f);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SetAudioControlLogoActive()
     {
-        
+        if (audioControlLogo != null) 
+            audioControlLogo.SetActive(true);
     }
 
     void FadeOut() {
