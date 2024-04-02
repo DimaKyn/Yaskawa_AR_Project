@@ -26,7 +26,7 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
         yaskawaRobot[2].GetComponent<Axis2_weld>().startWelding();
         yaskawaRobot[3].GetComponent<Axis3_weld>().rotateLeft60Deg();
 
-        Invoke("unhideReward", 10);
+        Invoke("unhideReward", 11);
     }
     
     // This function is used to determine if a user has already completed the welding task
@@ -51,7 +51,6 @@ public class EventClickWelding : MonoBehaviour, IPointerClickHandler
     public void hideWelding(){
         if(weldingScene != null){
             weldingScene.SetActive(false);
-            
         }
         torus.SetActive(true);
     }
