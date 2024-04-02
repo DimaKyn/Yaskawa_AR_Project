@@ -67,7 +67,7 @@ public class xpControler : MonoBehaviour
         waitForIt(0.7f);
 
         if(toMoveScene){
-            MoveToScene();
+            Invoke("MoveToScene", 1.5f);
         }
     }
 
