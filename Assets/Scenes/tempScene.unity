@@ -7136,8 +7136,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.06812382, y: 5.6688}
-  m_SizeDelta: {x: 275.8835, y: 360.6624}
+  m_AnchoredPosition: {x: -0.00090027, y: 10.064}
+  m_SizeDelta: {x: 364.91, y: 353.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877200322
 MonoBehaviour:
@@ -7159,7 +7159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7540dae78e9f7864c967f37c0b74867c, type: 3}
+  m_Texture: {fileID: 2800000, guid: 263226746e0433a449c06b7452ca5ad3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -7802,8 +7802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.06812382, y: 5.6688}
-  m_SizeDelta: {x: 275.8835, y: 360.6624}
+  m_AnchoredPosition: {x: -0.001084, y: 10.064}
+  m_SizeDelta: {x: 364.91, y: 353.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971927521
 MonoBehaviour:
@@ -7825,7 +7825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7540dae78e9f7864c967f37c0b74867c, type: 3}
+  m_Texture: {fileID: 2800000, guid: b13a8054a82c8ec4dba7486072776289, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -14721,8 +14721,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.06812382, y: 5.6688}
-  m_SizeDelta: {x: 275.8835, y: 360.6624}
+  m_AnchoredPosition: {x: 0.00066148, y: 10.064}
+  m_SizeDelta: {x: 364.91, y: 353.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903962297
 MonoBehaviour:
@@ -14744,7 +14744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7540dae78e9f7864c967f37c0b74867c, type: 3}
+  m_Texture: {fileID: 2800000, guid: d47b8985e798e4f41a981c0b28023d02, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
