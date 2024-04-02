@@ -4442,12 +4442,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Find Yaskawa GP8 robot
+  m_text: '1. Find the Yaskawa GP8 robot.
 
-    2. Point your phone camera at him
+    2. Point your phone camera at it.
 
     3.
-    When "Select Me" button appers click it.
+    When the "Select Me" button appers, tap it.
 
 
     If you can''t find GP8 or your

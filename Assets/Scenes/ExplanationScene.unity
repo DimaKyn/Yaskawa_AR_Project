@@ -545,7 +545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0035333, y: 223}
+  m_AnchoredPosition: {x: 26, y: 202}
   m_SizeDelta: {x: 149.9074, y: 134.6579}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &600564047
@@ -906,10 +906,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'New scene, new challenges!
+  m_text: 'Look up, new challenges!
 
-    Click the mission button to see the missions
-    waiting for you.'
+    Click the mission button at the top-left
+    of your screen to see the missions waiting for you.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6adecb70963024fbac0e585ff5412b, type: 2}
   m_sharedMaterial: {fileID: -3161009254059179727, guid: da6adecb70963024fbac0e585ff5412b, type: 2}

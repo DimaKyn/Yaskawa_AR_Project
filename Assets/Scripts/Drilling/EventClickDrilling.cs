@@ -18,6 +18,7 @@ public class EventClickDrilling : MonoBehaviour
 
         if (step == 0)
         {
+            torus.SetActive(false);
             Invoke("ActivateTorus2", 3);
             yaskawaRobot[0].GetComponent<Drill_1>().Axis0_rotate();
             yaskawaRobot[1].GetComponent<Drill_1>().Axis1_rotate();
@@ -41,7 +42,6 @@ public class EventClickDrilling : MonoBehaviour
 
     public void ActivateTorus2()
     {
-        torus.SetActive(false);
         torus2.SetActive(true);
     }
 

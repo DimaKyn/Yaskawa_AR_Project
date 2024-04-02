@@ -595,6 +595,103 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &33398572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 348330953}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_Name
+      value: cylinder_welded 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec5e0ca593dcf3e439ef863d905cabd4, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: -8700617353114198275, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+    - {fileID: 65702495048144492, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 33398575}
+  m_SourcePrefab: {fileID: 100100000, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+--- !u!4 &33398573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+  m_PrefabInstance: {fileID: 33398572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &33398574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+  m_PrefabInstance: {fileID: 33398572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &33398575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33398574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95be59150bb1c84b843d5e732ae1773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWelding: 0
 --- !u!1 &68442370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,6 +2091,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154391952}
   m_CullTransparentMesh: 1
+--- !u!1 &190087678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
+  m_PrefabInstance: {fileID: 963372671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190087682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190087678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95be59150bb1c84b843d5e732ae1773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWelding: 0
 --- !u!1 &217298060
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3659,7 @@ Transform:
   m_Children:
   - {fileID: 1877232562}
   - {fileID: 963372672}
+  - {fileID: 33398573}
   m_Father: {fileID: 1554531677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &362474110
@@ -4236,6 +4352,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424223173}
   m_CullTransparentMesh: 1
+--- !u!1 &447696184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 878c2375d927bfb4e977b3d0ff361ae9, type: 3}
+  m_PrefabInstance: {fileID: 33398572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &487316529 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 185bae949c744c942a89525c028727a6, type: 3}
@@ -4818,6 +4939,10 @@ MonoBehaviour:
   areaLight: {fileID: 782809426}
   source: {fileID: 1785033226}
   clip: {fileID: 8300000, guid: 60a0b9d8b5684c4418c9cadc94c11a54, type: 3}
+  cylinderPart1: {fileID: 190087682}
+  cylinderPart2: {fileID: 33398575}
+  unweldedCylinder: {fileID: 963372673}
+  weldedCylinder: {fileID: 447696184}
 --- !u!114 &540763545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7619,14 +7744,28 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec5e0ca593dcf3e439ef863d905cabd4, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
+    - {fileID: -8700617353114198275, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 190087682}
   m_SourcePrefab: {fileID: 100100000, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
 --- !u!4 &963372672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
+  m_PrefabInstance: {fileID: 963372671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &963372673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e2f76ce49f4a77442b35317fa3f83e63, type: 3}
   m_PrefabInstance: {fileID: 963372671}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &971927519
@@ -10930,22 +11069,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Choose a flat ground
+  m_text: '1. Choose a flat ground.
 
-    2. When a small square appears click on it
+    2. When a small square appears tap the screen.
 
     3.
-    You should see the robot been placed on the place you clicked
+    The robot is now placed at that location.
 
-    4. Click on
-    the operation you want, click on the green circles on to make the robot perform
-    the operation.
+    4. Click on the operation you
+    want to perform, click on the green circles to make the robot perform the operations.
 
 
-    Locking Tip:
+    Locking
+    Tip:
 
-    Want to keep your robot in place? Look
-    for the lock icon. Tap it to lock your robot, preventing accidental relocation.'
+    Want to keep your robot in place? Look for the lock icon. Tap it to
+    lock your robot, preventing accidental relocation.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6adecb70963024fbac0e585ff5412b, type: 2}
   m_sharedMaterial: {fileID: -3161009254059179727, guid: da6adecb70963024fbac0e585ff5412b, type: 2}
@@ -11769,11 +11908,11 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1076518522}
-  - {fileID: 876333351}
-  - {fileID: 348330953}
-  - {fileID: 1525133926}
   - {fileID: 1323125649}
+  - {fileID: 1525133926}
+  - {fileID: 348330953}
+  - {fileID: 876333351}
+  - {fileID: 1076518522}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1554531678
@@ -16757,8 +16896,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Payload capacity of 8 kg\r\nHorizontal reach of 720 - 1,439 mm depending
-    on model\r\nHigh speed and accuracy with repeatability of \xB10.03 mm"
+  m_text: "Payload capacity of 8 kg\r.\nHorizontal reach of 720 - 1,439 mm depending
+    on model\r.\nHigh speed and accuracy with repeatability of \xB10.03 mm."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6adecb70963024fbac0e585ff5412b, type: 2}
   m_sharedMaterial: {fileID: -3161009254059179727, guid: da6adecb70963024fbac0e585ff5412b, type: 2}
