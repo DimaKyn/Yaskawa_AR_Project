@@ -22,7 +22,8 @@ For the app, scan the QR code below. It will take you to our Google Drive that c
 - Offering instructional audio and explanations for app functionalities.
 
 ### Tools used
-- Various tools were used in the making of this app. Fruity Loops for the main soundtrack, various sound effects.
+Various tools were used in the making of this app:
+- Fruity Loops for the main soundtrack, various sound effects.
 - Blender for modeling some simple objects.
 - Vuforia for model detection.
 - Photoshop for designing various background images.
