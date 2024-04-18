@@ -1,4 +1,39 @@
-
+<p align="center">
+  <img  src="Yaskawa-logo.png">
+</p>
  
 
-![alt text](https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa_Info.png?raw=true)
+## Abstract
+This project creates an AR mobile app for factory training. 
+The app uses Vuforia and Unity to allow users to recognize a Yaskawa GP8 robot and virtualy place it.
+Users can then simulate bolt training, welding and drilling procedures, receiving in-app rewards for completion.
+Sound effects and explanations guide users through the app, providing an interactive training experience.
+
+## Usage
+For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
+![alt text](https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png?raw=true)
+
+### Some scene's from the app
+![alt text](https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa_Screens.png?raw=true)
+
+## Objective
+- Enabling recognition of the robot through a phone camera.
+- Allow virtual placement of the robot in the user's enviorment.
+- Simulating procedures like bolt tightening, welding and drilling.
+- Providing a reward system (XP) for completing tasks.
+- Offering instructional audio and explanations for app functionalities.
+
+### Tools used
+- Various tools were used in the making of this app. Fruity Loops for the main soundtrack, various sound effects.
+- Blender for modeling some simple objects.
+- Vuforia for model detection.
+- Photoshop for designing various background images.
+
+[![Skills](https://skillicons.dev/icons?i=unity,cs,blender,photoshop)](https://skillicons.dev)
+
+## Authors
+- [@DimaKyn](https://github.com/DimaKyn)
+- [@MaximL98](https://github.com/MaximL98)
+- [@ilyaveruk](https://github.com/ilyaveruk)
+
+
