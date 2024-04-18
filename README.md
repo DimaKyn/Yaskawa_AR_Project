@@ -11,7 +11,7 @@ Sound effects and explanations guide users through the app, providing an interac
 For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
 <p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png" width="25%" height="25%"> </p>
 
-### Some scene's from the app
+### Example
 <p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa_Screens.png" width="75%" height="75%"> </p>
 
 ## Objective
