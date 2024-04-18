@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa-logo.png" width="25%" height="25%"> </p>
+<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa-logo.png" width="15%" height="15%"> </p>
  
 
 ## Abstract
@@ -9,7 +9,7 @@ Sound effects and explanations guide users through the app, providing an interac
 
 ## Usage
 For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
-<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png" width="50%" height="50%"> </p>
+<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png" width="25%" height="25%"> </p>
 
 ### Some scene's from the app
 <p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa_Screens.png" width="75%" height="75%"> </p>
