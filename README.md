@@ -1,6 +1,4 @@
-<p align="center">
-  <img  src="Yaskawa-logo.png">
-</p>
+<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa-logo.png" width="25%" height="25%"> </p>
  
 
 ## Abstract
@@ -11,10 +9,10 @@ Sound effects and explanations guide users through the app, providing an interac
 
 ## Usage
 For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
-![alt text](https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png?raw=true)
+<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png" width="50%" height="50%"> </p>
 
 ### Some scene's from the app
-![alt text](https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa_Screens.png?raw=true)
+<p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/Yaskawa_Screens.png" width="75%" height="75%"> </p>
 
 ## Objective
 - Enabling recognition of the robot through a phone camera.
