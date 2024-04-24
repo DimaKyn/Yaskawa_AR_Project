@@ -36,6 +36,6 @@ Various tools were used in the making of this app:
 - [@ilyaveruk](https://github.com/ilyaveruk)
 
 ## Links to article
-- [@LinkedIn]([https://github.com/DimaKyn](https://www.linkedin.com/posts/braude-academic-college_%D7%94%D7%99%D7%95%D7%9D-%D7%94%D7%AA%D7%A7%D7%99%D7%99%D7%9D-%D7%90%D7%99%D7%A8%D7%95%D7%A2-%D7%94%D7%A6%D7%92%D7%AA-%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D-%D7%91%D7%A7%D7%95%D7%A8%D7%A1-%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98-activity-7186678871641964544-v4EO?utm_source=share&utm_medium=member_desktop))
+- [LinkedIn]([https://github.com/DimaKyn](https://www.linkedin.com/posts/braude-academic-college_%D7%94%D7%99%D7%95%D7%9D-%D7%94%D7%AA%D7%A7%D7%99%D7%99%D7%9D-%D7%90%D7%99%D7%A8%D7%95%D7%A2-%D7%94%D7%A6%D7%92%D7%AA-%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D-%D7%91%D7%A7%D7%95%D7%A8%D7%A1-%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98-activity-7186678871641964544-v4EO?utm_source=share&utm_medium=member_desktop))
 - [@]()
 - [@]()
