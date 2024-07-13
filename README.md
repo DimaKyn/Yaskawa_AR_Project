@@ -8,10 +8,8 @@ Users can then simulate bolt training, welding and drilling procedures, receivin
 Sound effects and explanations guide users through the app, providing an interactive training experience.
 
 ## Video Example: Click on the image to be redirected to the youtube video (Hebrew)
-<p align="center">
  [![Watch the video (Hebrew)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8)
-https://www.youtube.com/watch?v=zRdTDsM1LX8 </p>
-
+https://www.youtube.com/watch?v=zRdTDsM1LX8
 ## Usage
 For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
 <p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png" width="25%" height="25%"> </p>
