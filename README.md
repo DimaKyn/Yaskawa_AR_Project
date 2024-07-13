@@ -8,8 +8,9 @@ Users can then simulate bolt training, welding and drilling procedures, receivin
 Sound effects and explanations guide users through the app, providing an interactive training experience.
 
 ## Video Example: Click on the image to be redirected to the youtube video (Hebrew)
-[![Watch the video (Hebrew)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8)
-<p align="center">https://www.youtube.com/watch?v=zRdTDsM1LX8 </p>
+<p align="center">
+ [![Watch the video (Hebrew)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8)
+https://www.youtube.com/watch?v=zRdTDsM1LX8 </p>
 
 ## Usage
 For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
