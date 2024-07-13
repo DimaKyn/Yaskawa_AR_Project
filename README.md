@@ -7,7 +7,7 @@ The app uses Vuforia and Unity to allow users to recognize a Yaskawa GP8 robot a
 Users can then simulate bolt training, welding and drilling procedures, receiving in-app rewards for completion.
 Sound effects and explanations guide users through the app, providing an interactive training experience.
 
-## Video Example: Click on the image to be redirected to the youtube video (Hebrew)
+## Video Example: Click on the image to be redirected to the youtube video (Hebrew voiceover)
  [![Watch the video (Hebrew voiceover)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8)
 <p> https://www.youtube.com/watch?v=zRdTDsM1LX8 </p>
 
