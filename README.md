@@ -7,6 +7,9 @@ The app uses Vuforia and Unity to allow users to recognize a Yaskawa GP8 robot a
 Users can then simulate bolt training, welding and drilling procedures, receiving in-app rewards for completion.
 Sound effects and explanations guide users through the app, providing an interactive training experience.
 
+## Video Example
+- [![Watch the video (Hebrew)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8)
+
 ## Usage
 For the app, scan the QR code below. It will take you to our Google Drive that contains app APK file.
 <p align="center"> <img src="https://github.com/DimaKyn/Yaskawa_AR_Project/blob/main/QR_code.png" width="25%" height="25%"> </p>
