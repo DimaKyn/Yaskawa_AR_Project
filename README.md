@@ -8,7 +8,7 @@ Users can then simulate bolt training, welding and drilling procedures, receivin
 Sound effects and explanations guide users through the app, providing an interactive training experience.
 
 ## Video Example: Click on the image to be redirected to the youtube video (Hebrew)
-<p align="center"> [![Watch the video (Hebrew)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8) </p>
+[![Watch the video (Hebrew)](https://img.youtube.com/vi/zRdTDsM1LX8/0.jpg)](https://www.youtube.com/watch?v=zRdTDsM1LX8)
 <p align="center">https://www.youtube.com/watch?v=zRdTDsM1LX8 </p>
 
 ## Usage
